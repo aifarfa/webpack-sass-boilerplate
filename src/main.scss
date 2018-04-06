@@ -2,7 +2,8 @@
 
 $dark-green: #003333;
 $dark-gray: #333333;
-$gray: #cccccc;
+$light-gray: #cccccc;
+$gray: #999999;
 $brown: #996633;
 $light-brown: #cc9966;
 $sakura-pink: #ffcccc;
@@ -19,5 +20,25 @@ body {
     display: inline-block;
     width: 26px;
     height: 26px;
+  }
+}
+
+.schedule-head {
+  color: $gray;
+}
+
+.schedule {
+  .timebox {
+    background-color: $light-brown;
+    color: white;
+    text-align: center;
+
+    &.selected {
+      background-color: $light-gray;
+    }
+  }
+
+  .notify-box {
+    height: 48px;
   }
 }
