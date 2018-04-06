@@ -31,14 +31,22 @@ body {
   .timebox {
     background-color: $light-brown;
     color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     text-align: center;
 
-    &.selected {
+    &.active {
+      background-color: $brown;
+    }
+
+    &.inactive {
       background-color: $light-gray;
     }
   }
 
   .notify-box {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     height: 48px;
   }
 }
