@@ -1,3 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+$dark-green: #003333;
+$dark-gray: #333333;
+$gray: #cccccc;
+$brown: #996633;
+$light-brown: #cc9966;
+$sakura-pink: #ffcccc;
+
 body {
   background-color: #fff;
+}
+
+.header {
+  background-color: $dark-green;
+  color: white;
+
+  .number {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+  }
 }
