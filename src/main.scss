@@ -12,14 +12,44 @@ body {
   background-color: #fff;
 }
 
+%rounded-number {
+  border: 2px solid;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 36px;
+}
+
 .header {
   background-color: $dark-green;
   color: white;
 
   .number {
-    display: inline-block;
-    width: 26px;
-    height: 26px;
+    @extend %rounded-number;
+  }
+}
+
+.calendar {
+  .number {
+    @extend %rounded-number;
+    border-color: $light-brown;
+    color: $light-brown;
+
+    &.today {
+      background-color: $light-brown;
+      color: white;
+    }
+    &.disabled {
+      background-color: $light-gray;
+      border: none;
+      color: $gray;
+    }
+    &.selected {
+      border: none;
+      background-color: $sakura-pink;
+      color: $gray;
+    }
   }
 }
 
