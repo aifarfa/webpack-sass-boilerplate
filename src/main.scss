@@ -31,6 +31,8 @@ body {
 }
 
 .calendar {
+  font-weight: bold;
+  text-align: center;
   .number {
     @extend %rounded-number;
     border-color: $light-brown;
