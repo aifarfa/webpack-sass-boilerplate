@@ -6038,7 +6038,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .dropdown-border {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
