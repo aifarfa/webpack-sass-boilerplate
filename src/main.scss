@@ -8,7 +8,7 @@ $light-brown: #cc9966;
 $sakura-pink: #ffcccc;
 $dropdown-border: 1px solid $light-gray;
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
   .dropdown-border {
     border-left: $dropdown-border;
     border-right: $dropdown-border;
